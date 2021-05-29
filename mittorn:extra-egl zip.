@@ -1,0 +1,8 @@
+#Example Mesa3D 20.3.1 Build on Ubuntu 18.04
+sudo apt-get build-dep mesa
+sudo apt-get install mesa-utils
+sudo apt-get install scons flex bison python-mako
+wget https://archive.mesa3d.org/mesa-20.3.1.tar.xz
+tar -xf mesa-20.3.1.tar.xz
+cd mesa-20.3.1
+scons force_scons=1 build=release
